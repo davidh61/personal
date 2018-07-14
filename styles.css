@@ -1,13 +1,13 @@
-/* Remove scroll bar */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 .name {
     text-align: center;
 }
-
 
 .cv {
  padding: 0 30% 0 30%;   
@@ -27,8 +27,6 @@ body {
 .blue-triangle {
     background-color: aquamarine;
 }
-
-
 
 .pink-triangle { 
     bottom:-120;

@@ -18,21 +18,52 @@
 
   <div class="cv">
 
-    <p>Proident excepteur occaecat voluptate minim nisi in. Officia officia quis dolor exercitation. Eu minim laborum sit eu non eiusmod consequat adipisicing ipsum Lorem ex. Fugiat aute cillum quis quis eu ex fugiat. Incididunt reprehenderit sint officia nisi elit velit.</p>
+    <p>Good <i class="time-of-day"></i>, I'm David/Dave. I'm a web developer with an interest in all things in tech related. I built this website primarily
+      as a playground for me outside of work hours. Currently I'm looking at _______</p>
 
-    <p>Proident excepteur occaecat voluptate minim nisi in. Officia officia quis dolor exercitation. Eu minim laborum sit eu non eiusmod consequat adipisicing ipsum Lorem ex. Fugiat aute cillum quis quis eu ex fugiat. Incididunt reprehenderit sint officia nisi elit velit.</p>
+    <p>If you do actually give a fuck about what I do for a living, here's a list of stuff I know:
+      <h4>Languages</h4>
+      <ul>
+        <li>C#</li>
+        <li>HTML, CSS, SASS, JS </li>
+        <li>~ PHP</li>
+      </ul>
 
-    <p>Proident excepteur occaecat voluptate minim nisi in. Officia officia quis dolor exercitation. Eu minim laborum sit eu non eiusmod consequat adipisicing ipsum Lorem ex. Fugiat aute cillum quis quis eu ex fugiat. Incididunt reprehenderit sint officia nisi elit velit.</p>
-    
+    </p>
+
+    <p>Proident excepteur occaecat voluptate minim nisi in. Officia officia quis dolor exercitation. Eu minim laborum sit eu
+      non eiusmod consequat adipisicing ipsum Lorem ex. Fugiat aute cillum quis quis eu ex fugiat. Incididunt reprehenderit
+      sint officia nisi elit velit.</p>
+
   </div>
 
 
   <div class="pink-triangle"></div>
 
 
-<div class="blue-triangle"></div>
+  <div class="blue-triangle"></div>
 
 
   <!-- <script src="js/scripts.js"/> -->
+  <script>
+
+    var dateTime = new Date(),
+      hour = dateTime.getHours();
+
+    var timeOfDay = "";
+
+      if (hour >= 4 && hour <= 11) {
+        timeOfDay = "morning";
+      } else if (hour >= 12 && hour <= 16) {
+        timeOfDay = "afternoon";
+      } else if (hour >= 17 && hour <= 20) {
+        timeOfDay = "evening";
+      }
+
+    document.getElementsByClassName('time-of-day')[0].innerHTML = timeOfDay;
+
+
+  </script>
 </body>
+
 </html>
