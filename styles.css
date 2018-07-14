@@ -1,0 +1,48 @@
+/* Remove scroll bar */
+body {
+    overflow: hidden;
+}
+
+
+.name {
+    text-align: center;
+}
+
+
+.cv {
+ padding: 0 30% 0 30%;   
+}
+
+.blue-triangle, .pink-triangle { 
+    opacity: 0.5;
+    position: absolute;
+    bottom:-100;
+    left: -100;
+    transform: skew(30deg, -40deg);
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+.blue-triangle {
+    background-color: aquamarine;
+}
+
+
+
+.pink-triangle { 
+    bottom:-120;
+    left: -50;
+    background-color:deeppink;
+}
+
+@media only screen and (max-width: 600px) {
+    .cv {
+        padding: 0;   
+    }
+
+    .blue-triangle, .pink-triangle {
+        opacity: 0.2;
+    }
+
+}
