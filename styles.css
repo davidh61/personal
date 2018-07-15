@@ -39,6 +39,7 @@ body {
     bottom:-120;
     left: -50;
     background-color:deeppink;
+}
 
 @media only screen and (max-width: 600px) {
     .cv {
