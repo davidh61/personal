@@ -18,30 +18,33 @@
 
   <div class="cv">
 
-    <p>Good <i class="time-of-day"></i>, I'm David/Dave. I'm a web developer with an interest in all things in tech related. I built this website primarily
+    <p>Good <i class="time-of-day"></i>, I'm Dave. I'm a web developer currently based in Bournemouth with an interest in all things in tech related. I built this website primarily
       as a playground for me outside of work hours. Currently I'm looking at _______</p>
 
-    <p>If you do actually give a fuck about what I do for a living, here's a list of stuff I know:
-      <h4>Languages</h4>
-      <ul>
-        <li>C#</li>
-        <li>HTML, CSS, SASS, JS </li>
-        <li>~ PHP</li>
-      </ul>
-
+    <p>If you do actually give a toss about what I do for a living however, here's a list of stuff I know:
+        <h4>Languages</h4>
+        <ul>
+          <li>C#</li>
+          <li>HTML, CSS, SASS, JS </li>
+          <li>SQL/MySQL</li>
+        </ul>
+        <h4>Frameworks/Technologies</h4>
+        <ul>
+          <li>.NET 4.5/Core</li>
+          <li>Episerver (CMS & Commerce)</li>
+          <li>Entity Framework</li>
+          <li>Azure/AWS</li>
+        </ul>
     </p>
-
-    <p>Proident excepteur occaecat voluptate minim nisi in. Officia officia quis dolor exercitation. Eu minim laborum sit eu
-      non eiusmod consequat adipisicing ipsum Lorem ex. Fugiat aute cillum quis quis eu ex fugiat. Incididunt reprehenderit
-      sint officia nisi elit velit.</p>
 
   </div>
 
 
   <div class="pink-triangle"></div>
-
-
   <div class="blue-triangle"></div>
+
+  <div class="top-pink-triangle"></div>
+  <div class="top-blue-triangle"></div>
 
 
   <!-- <script src="js/scripts.js"/> -->
@@ -52,13 +55,13 @@
 
     var timeOfDay = "";
 
-      if (hour >= 4 && hour <= 11) {
-        timeOfDay = "morning";
-      } else if (hour >= 12 && hour <= 16) {
-        timeOfDay = "afternoon";
-      } else if (hour >= 17 && hour <= 20) {
-        timeOfDay = "evening";
-      }
+    if (hour >= 4 && hour <= 11) {
+      timeOfDay = "morning";
+    } else if (hour >= 12 && hour <= 16) {
+      timeOfDay = "afternoon";
+    } else if (hour >= 17 && hour <= 20) {
+      timeOfDay = "evening";
+    }
 
     document.getElementsByClassName('time-of-day')[0].innerHTML = timeOfDay;
 

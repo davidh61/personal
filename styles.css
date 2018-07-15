@@ -13,7 +13,7 @@ body {
  padding: 0 30% 0 30%;   
 }
 
-.blue-triangle, .pink-triangle { 
+.blue-triangle, .pink-triangle, .top-pink-triangle, .top-blue-triangle { 
     opacity: 0.5;
     position: absolute;
     bottom:-100;
@@ -24,15 +24,21 @@ body {
     background-color: aquamarine;
 }
 
-.blue-triangle {
-    background-color: aquamarine;
+.top-pink-triangle {
+    top:-120;
+    right: -50;
+    background-color: deeppink ;
+}
+
+.top-blue-triangle {
+    top:-100;
+    right: -100;
 }
 
 .pink-triangle { 
     bottom:-120;
     left: -50;
     background-color:deeppink;
-}
 
 @media only screen and (max-width: 600px) {
     .cv {
