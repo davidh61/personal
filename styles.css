@@ -125,12 +125,12 @@ animation: moveright 1.5s forwards
 
 @keyframes moveleft {
     0% { left: 0px; display:block ; opacity: 100; }
-    50% { display:block; opacity: 1;}
+    1% { opacity: 1;}
     100% {left: -30%;display:none; opacity: 0;}
 }
 
 @keyframes moveright {
-    0% { left: -30%; display:none; opacity: 0; }
-    99% { display:block; opacity: 100; }
+    0% { left: -30%; opacity: 0; }
+    99% { opacity: 1; }
     100% { left: 0; opacity: 100; }
 }
