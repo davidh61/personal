@@ -12,3 +12,15 @@ timeOfDay = "evening";
 }
 
 document.getElementsByClassName('time-of-day')[0].innerHTML = timeOfDay;
+
+
+function hideCv() {
+    var cv = document.getElementsByClassName("cv")[0];
+    cv.classList.add("cv-hide");
+}
+
+function showCv() {
+    var cv = document.getElementsByClassName("cv")[0];
+    cv.classList.remove("cv-hide");
+    cv.classList.add("cv-show");
+}

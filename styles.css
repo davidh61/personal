@@ -10,8 +10,12 @@ body {
     text-align: center;
 }
 
+.cv-show {
+animation: moveright 1.5s forwards
+}
+
 .cv-hide {
- animation: moveleft 2s forwards
+ animation: moveleft 1.5s forwards
 }
 
 .cv {
@@ -78,18 +82,34 @@ body {
     background-color:aquamarine;
 }
 
+.arrows {
+    text-align: center;
+    color: #333333;    
+}
+
+.arrows > i:hover {
+    cursor: pointer;
+    color: #656565;    
+}
+
 @media only screen and (max-width: 600px) {
     .cv {
         padding: 0;   
     }
 
     .shape {
-        opacity: 0.2;
+        opacity: 0.2;   
     }
 }
 
 @keyframes moveleft {
     0% { left: 0px; display:block ; opacity: 100; }
-    1% { display:block; opacity: 1;}
-    100% {left: -30%;display:none ; opacity: 0;}
+    50% { display:block; opacity: 1;}
+    100% {left: -30%;display:none; opacity: 0;}
+}
+
+@keyframes moveright {
+    0% { left: -30%; display:none; opacity: 0; }
+    99% { display:block; opacity: 100; }
+    100% { left: 0; opacity: 100; }
 }
