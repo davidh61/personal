@@ -88,6 +88,27 @@ body {
     }
 }
 
+@media only screen and (min-width: 1400px) {
+    .top-right-three, .top-right-four {
+        transform: skew(30deg, -80deg);
+        
+    }
+    .top-right-three {
+        top: 0;
+        right: 200px;
+        background-color: #9e1768;
+    }
+
+    .top-right-four {
+        top: 20px;
+        right: 220px;
+        background-color: #00a1ff;
+    }
+
+}
+
+
+
 @keyframes moveleft {
     0% { left: 0px; display:block ; opacity: 100; }
     1% { display:block; opacity: 1;}
