@@ -20,15 +20,19 @@ function hideCv() {
     
     var topRightOne = document.getElementsByClassName("top-right-one")[0];
     topRightOne.classList.add("move-down-one");
+    topRightOne.classList.remove("move-up-one");
     
     var topRightTwo = document.getElementsByClassName("top-right-two")[0];
     topRightTwo.classList.add("move-down-two");
+    topRightTwo.classList.remove("move-up-two");
 
     var topRightThree = document.getElementsByClassName("top-right-three")[0];
     topRightThree.classList.add("move-up-three");
+    topRightThree.classList.remove("move-down-three");
     
     var topRightFour = document.getElementsByClassName("top-right-four")[0];
     topRightFour.classList.add("move-up-four");
+    topRightFour.classList.remove("move-down-four");
 }
 
 function showCv() {

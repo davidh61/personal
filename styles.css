@@ -23,11 +23,11 @@ h1 {
 }
 
 .move-down-one {
-    animation: movedown-one 4s forwards
+    animation: movedown-one 3s forwards
 }
 
 .move-down-two {
-    animation: movedown-two 4s forwards
+    animation: movedown-two 3s forwards
 }
 
 .move-up-three {
@@ -39,14 +39,12 @@ h1 {
 }
 
 .move-down-three {
-    animation: movedown-three 4s forwards
+    animation: movedown-three 3s forwards
 }
 
 .move-down-four {
-    animation: movedown-four 4s forwards
+    animation: movedown-four 3s forwards
 }
-
-
 
 
 .cv-show {
@@ -108,16 +106,15 @@ animation: moveright 1.5s forwards
 
 .top-right-three, .top-right-four {
     transform: skew(30deg, -80deg);
+    top: 0px;
     opacity: 0.2;
 }
 .top-right-three {
-    top: 0;
     right: 140px;
     background-color: #9e1768;
 }
 
 .top-right-four {
-    top: 20px;
     right: 160px;
     background-color: #00a1ff;
 }
@@ -173,11 +170,7 @@ animation: moveright 1.5s forwards
     }
 }
 
-@media only screen and (min-width: 1400px) {
-    .top-right-three, .top-right-four {
-        opacity: 0;
-    }
-}
+
 
 @keyframes moveleft {
     0% { left: 0px; display:block ; opacity: 100; }
@@ -217,29 +210,16 @@ animation: moveright 1.5s forwards
 }
 
 @keyframes movedown-four {
-    0% { top: 20px;  right: 160px;}
-    100% { top: 280px;  right: 220px;}
+    0% { top: 280px;  right: 220px;}
+    100% { top: 0px;  right: 140px;}
 }
 
 @keyframes moveup-three {
-    0% { top: 300;  right: 200px;}
-    100% { top: -500;  right: 100px;}
+    0% { top: 0;  right: 200px;}
+    100% { top: -500;  right: 90px;}
 }
 
 @keyframes moveup-four {
-    0% { top: 280px;  right: 220px;}
-    100% { top: -480px;  right: 160px;}
-}
-
-
-.top-right-three {
-    top: 0;
-    right: 140px;
-    background-color: #9e1768;
-}
-
-.top-right-four {
-    top: 20px;
-    right: 160px;
-    background-color: #00a1ff;
+    0% { top: 0;  right: 160px;}
+    100% { top: -500px;  right: 60px;}
 }
