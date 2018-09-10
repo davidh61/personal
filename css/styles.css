@@ -1,19 +1,14 @@
 body {
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
-  display: inline; }
+  display: inline;
+  background-color: #212121; }
 
 h1 {
   font-family: 'Pacifico', cursive; }
 
 .name {
   text-align: center; }
-
-.cv-show {
-  animation: moveright 1.5s forwards; }
-
-.cv-hide {
-  animation: moveleft 1.5s forwards; }
 
 .cv {
   padding: 0 30% 0 30%;
